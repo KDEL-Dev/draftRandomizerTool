@@ -8,12 +8,24 @@ let players = [
 
 let delayTime = 1000; // milliseconds
 
-// Get ordinal (1st, 2nd, 3rd, etc.)
+// Get ordinal endings like "1st", "2nd", "3rd", etc.
 function getOrdinal(n) {
-    const s = ["th", "st", "nd", "rd"];
-    const v = n % 100;
-    return n + (s[(v - 20) % 10] || s[v] || s[0]);
+    const lastTwo = n % 100;  // Get last two digits to handle special cases like 11, 12, 13
+
+    // Special teen endings: 11th, 12th, 13th
+    if (lastTwo === 11 || lastTwo === 12 || lastTwo === 13) {
+        return n + "th";
+    }
+
+    const lastDigit = n % 10;  // Get last digit for general cases
+
+    if (lastDigit === 1) return n + "st";  // 1st
+    if (lastDigit === 2) return n + "nd";  // 2nd
+    if (lastDigit === 3) return n + "rd";  // 3rd
+
+    return n + "th";  // All other numbers
 }
+
 
 // Delay helper
 function delay(ms) {

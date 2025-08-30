@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>NBA Fantasy Draft</h1>
+    <div id="setupBox">
+        <h1>NBA Fantasy Draft</h1>
 
-    <label for="delayInput">Delay (seconds):</label>
-    <input type="number" id="delayInput" value="1" min="0.1" step="0.1">
-    <button id="setDelayBtn">Set Delay</button>
-
-    <div>
-        <button id="startBtn">Start Draft</button>
-    </div>    
+        <label for="delayInput">Delay (seconds):</label>
+        <input type="number" id="delayInput" value="1" min="0.1" step="0.1">
+        <button id="setDelayBtn">Set Delay</button>
     
+
+        <div>
+            <button id="startBtn">Start Draft</button>
+        </div>    
+    </div>
 
    
     <div id="draftResults"></div>

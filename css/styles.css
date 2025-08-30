@@ -1,0 +1,39 @@
+body{
+    font-family:'Arial Narrow Bold', sans-serif;
+    background-color: rgb(236, 230, 224);
+
+    
+}
+
+h1{
+    color: rgb(136, 117, 105);
+}
+
+#startBtn
+{
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+#setDelayBtn
+{
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#setupBox
+{
+    border-style: solid;
+    border-width: 1px;
+    padding: 25px;
+    background-color: white;
+}
+
+#draftResults p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 25px;
+   
+}
