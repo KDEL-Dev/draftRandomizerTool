@@ -1,6 +1,7 @@
 body{
     font-family:'Arial Narrow Bold', sans-serif;
     background-color: rgb(236, 230, 224);
+    max-width: 500px;
 
     
 }
@@ -29,6 +30,21 @@ h1{
     border-width: 1px;
     padding: 25px;
     background-color: white;
+}
+
+#draftOrder
+{
+    margin-left: 25px;
+    font-weight: 200;
+}
+
+#draftResults
+{
+    min-height: 500px;
+    background-color: white;
+    margin-top: 20px;
+
+    border: solid 1px ;
 }
 
 #draftResults p
